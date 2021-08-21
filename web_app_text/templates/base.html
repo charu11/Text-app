@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Classification</title>
+</head>
+<body>
+
+<h2>Please insert the text you wish to classify</h2>
+
+<form action="/form" method = "POST">
+    <p>Text <input type = "text" name = "form_data" /></p>
+    <p><input type = "submit" value = "submit" /></p>
+</form>
+
+{% if result %}
+<p> The result is: {{ result }} </p>
+{% endif %}
+</body>
+</html>
